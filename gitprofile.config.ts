@@ -75,8 +75,7 @@ const CONFIG = {
     email: '',
   },
   resume: {
-    fileUrl:
-      '', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'Embedded',
@@ -88,7 +87,7 @@ const CONFIG = {
     'Git',
     'Docker',
   ],
-/*  experiences: [
+  /*  experiences: [
     {
       company: 'Company Name',
       position: 'Position',
@@ -112,15 +111,15 @@ const CONFIG = {
       link: 'https://example.com',
     },
   ],
-*/  educations: [
+*/ educations: [
     {
       institution: 'University of New Orleans',
       degree: 'Electrical Engineering',
       from: '2016',
       to: '2020',
-    }
+    },
   ],
-/*  publications: [
+  /*  publications: [
     {
       title: 'Publication Title',
       conferenceName: '',
@@ -140,10 +139,11 @@ const CONFIG = {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     },
   ],
+*/
   // Display articles from your medium or dev account. (Optional)
   blog: {
     source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
+    username: '', // to hide blog section, keep it empty
     limit: 2, // How many articles to display. Max is 10.
   },
   googleAnalytics: {
@@ -151,8 +151,8 @@ const CONFIG = {
   },
   // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: { id: '', snippetVersion: 6 },
-*/  themeConfig: {
-    defaultTheme: 'lofi',
+  themeConfig: {
+    defaultTheme: 'business',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
@@ -160,7 +160,7 @@ const CONFIG = {
 
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme
-    respectPrefersColorScheme: false,
+    respectPrefersColorScheme: true,
 
     // Display the ring in Profile picture
     displayAvatarRing: true,
@@ -207,7 +207,7 @@ const CONFIG = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
+  footer: `Made with <a
       class="text-primary" href="https://github.com/arifszn/gitprofile"
       target="_blank"
       rel="noreferrer"
